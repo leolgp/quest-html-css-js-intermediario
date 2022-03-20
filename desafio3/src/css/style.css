@@ -1,0 +1,107 @@
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 800px;
+    height: 402px;
+    background: url(../img/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    margin: 30px;
+}
+
+
+.texto{ 
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.texto h1{
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.texto p, h1{
+    color: #fff;
+}
+
+.texto p{
+    width: 300px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17.58px;
+}
+
+.formulario{
+    margin-right: 50px;
+    width: 340px;
+    height: 378px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.formulario input, textarea{
+    color: #A8A8A8;
+    padding: 8px;
+    margin-bottom: 7px;
+    width: 298px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.formulario textarea{
+    height: 100px;
+    resize: none;
+}
+
+.formulario ::placeholder{
+    color: #A8A8A8;
+}
+
+.formulario #btn{
+    background-color: #3CCC87;
+    color: #fff;
+    border: transparent;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.formulario span{
+    display: block;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -8px;
+    margin-bottom: ;
+}
+
+.formulario p{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+color: #F52E2E;
+margin-top: -7px;
+margin-bottom: 10px;
+}

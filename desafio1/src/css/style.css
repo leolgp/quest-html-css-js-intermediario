@@ -1,0 +1,116 @@
+.conteudo-principal .paineis{
+    display: flex;
+    justify-content: center;
+    height: 1080px;
+    width: 1920px;
+    align-items: center;
+    position: relative;
+}
+
+.conteudo-principal .paineis .imagem-painel{   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.conteudo-principal .paineis .projeto1 {
+    background-image: url('../imagem/1.jpg');
+}
+
+.conteudo-principal .paineis .projeto2 {
+    background-image: url('../imagem/2.jpg');
+}
+
+.conteudo-principal .paineis .projeto3 {
+    background-image: url('../imagem/3.jpg');
+}
+
+.conteudo-principal .paineis .projeto4 {
+    background-image: url('../imagem/4.jpg');
+}
+
+.conteudo-principal .paineis .imagem-painel.mostrar {
+    opacity: 1;
+}
+
+.conteudo-principal .paineis .seta {
+    background-image: url('../imagem/seta.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+}
+/* 
+text-indent: 100%;
+overflow: hidden; 
+ - usado para esconder o texto de um elemento
+*/
+
+.conteudo-principal .paineis .seta.apagada {
+    opacity: 0.3;
+}
+
+.conteudo-principal .paineis .seta.btn-voltar {
+    left: 20px;
+    transform: rotateY(180deg);
+}
+
+/* as duas classes .seta.btn-voltar juntas para estilizar mais especificamente */
+
+.conteudo-principal .paineis .seta.btn-avancar {
+    right: 20px;
+}
+
+.conteudo-principal .paineis .texto {
+    background-color: white;
+    color: black;
+    position: absolute;
+    background-position: left;
+    left: 180px;
+    width: 620px;
+    height: 700px;
+}
+
+.conteudo-principal .paineis .texto h2{
+    background-color: white;
+    color: black;
+    position: relative;
+    /* font: Roboto 400 50px; */
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 400;
+    padding: 60px;
+    margin-bottom: 20px;
+    }
+
+.conteudo-principal .paineis .texto p{
+    background-color: white;
+    color: black;
+    width: 500px;
+    height: 350px;
+    position: relative;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 35px;
+    margin: 0 60px 45px;
+}
+
+.conteudo-principal .paineis .texto a{
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    margin: 0 0 65px 60px;
+}
+

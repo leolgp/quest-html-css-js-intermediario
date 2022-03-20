@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Quest HTML CSS JS Intermediário - Desafio 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="texto">
+            <h1>Ficou com dúvida? <br>nos mande uma mensagem!</h1>
+
+            <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de
+                24h.</p>
+        </div>
+        <div class="formulario">
+            <form id="duvida">
+                <input type="text" id='nome' name='nome' placeholder="Nome completo *" id="nome" class="nome">
+                <p class="campoObrigatorio"></p>
+                <input type="text" placeholder="Email *" class='email' id="email">
+                <p class="campoObrigatorio"></p>
+                <input type="text" placeholder="Telefone *" class='telefone' id="telefone">
+                <p class="campoObrigatorio"></p>
+                <textarea form="duvida" id="mensagem" class='mensagem'>Mensagem *</textarea>
+                <p class="campoObrigatorio"></p>
+                <span>*campos obrigatórios</span>
+                <input type="submit" value="Enviar" id="btn" onclick="validar(event)">
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="src/js/validacaoFormulario.js"></script>
+</body>
+
+</html>
